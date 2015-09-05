@@ -54,7 +54,7 @@ Developer @GA in NYC
 
 
 
-
+<!--
 body {
      color: #000;
      font-size: 12px;
@@ -63,8 +63,7 @@ body {
      background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
       background-size: cover;
 }
-
-
+-->
 
 /******************************************
 /* LAYOUT
@@ -97,7 +96,10 @@ html {
 }
 
 header {
-    text-align: center;   
+    text-align: center;  
+    background: url(../images/header_bg.jpg);
+    height: 400px;
+    background-size: cover;     
 }
 
 h1 {
@@ -118,14 +120,37 @@ h2 {
     padding-bottom: 50px;
 }
 
-header button {
-    background: #f9e42e;
-    border-radius: 5px;
+a {
+    color: #000;
     font-size: 14px;
-    font-weight: bolder;
-    width: 140px;
-    height: 35px;
-    border: #f9e42e;
+    font-weight: bold;  
+    border: 1px #f9e42e;
+    border-radius: 5px;
+    background: #f9e42e;
+    height:40px;
+    width: 160px;
+    padding: 12.5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 12.5px;
+}
+
+
+
+.a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;  
+    border: 1px #033048;
+    border-radius: 5px;
+    background: #033048;
+    height:40px;
+    width: 160px;
+    padding: 12.5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .benefits h2 {
@@ -150,7 +175,7 @@ header button {
     margin-left: 50px;  
     font-size: 13px;
     font-weight: 200;
-    list-style: circle;
+    list-style: disc;
 }
     
 .benefits p {
@@ -167,7 +192,7 @@ div ul {
 
 
 .testimonial {
-    background-image: url("starter-code/images/testimonial_bg.jpg");
+    background-image: url(../images/testimonial_bg.jpg);
 }
 
 .testimonial p {
@@ -177,8 +202,6 @@ div ul {
     font-weight: lighter;
     font-style: italic;    
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
 }
 
 
@@ -208,7 +231,7 @@ footer {
     text-align: center;
 }
 
-footer h2 {
+footer h6 {
     color: #f9e42e;
     padding: 20px;
 }
